@@ -1,5 +1,5 @@
 const API_BASE =
-  (import.meta.env.VITE_API_URL?.replace(/\/$/, "") || "http://localhost:3000/api");
+  (import.meta.env.VITE_API_URL?.replace(/\/$/, "") || "https://node.husam.club/api");
 
 async function apiFetch<T>(path: string, payload: any): Promise<T> {
   const res = await fetch(`${API_BASE}${path}`, {

@@ -52,7 +52,7 @@ interface ForeignPolicyRecord {
 }
 
 // ✅ API helper (يدعم VITE_API_URL + JWT)
-const API_BASE_URL = (import.meta.env.VITE_API_URL?.replace(/\/$/, "")) || "http://localhost:3000/api";
+const API_BASE_URL = (import.meta.env.VITE_API_URL?.replace(/\/$/, "")) || "https://node.husam.club/api";
 
 async function apiGet<T>(path: string): Promise<T> {
   const token =

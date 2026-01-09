@@ -22,10 +22,10 @@ const EMPTY: Stats = {
   totalPremium: 0,
 };
 
-// مهم: خلي VITE_API_URL = http://localhost:3000/api
+// مهم: خلي VITE_API_URL = https://node.husam.club/api
 // أو على Render: https://your-backend.onrender.com/api
 const API_BASE_URL =
-  (import.meta.env.VITE_API_URL?.replace(/\/$/, "")) || "http://localhost:3000/api";
+  (import.meta.env.VITE_API_URL?.replace(/\/$/, "")) || "https://node.husam.club/api";
 
 function getErrorMessage(err: unknown) {
   if (err instanceof Error) return err.message;
